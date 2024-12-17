@@ -12,12 +12,3 @@ app.use(express.json({ limit: "10mb" }));
 app.listen(app.get("port"), function () {
 	console.log("Node app is running at localhost:" + app.get("port"));
 });
-
-// http://localhost:5000/
-// app.get("/", function (request, response) {
-// 	fs.readFile("./public/index.html", "utf-8", function (err, data) {
-// 		response.writeHead(200, { "Content-Type": "index/html" });
-// 		response.write(data);
-// 		response.end();
-// 	});
-// });
